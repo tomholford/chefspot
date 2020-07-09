@@ -1,0 +1,8 @@
+<list>
+<item><bold>bold</bold><italic>italic</italic><keyword>keyword</keyword></item>
+<item><keyword><bold>bold keyword</bold></keyword><keyword><italic>italic keyword</italic></keyword></item>
+<item>%%</item>
+</list>
+
+I AM A CAT.
+As yet I have no name.
