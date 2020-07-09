@@ -25,8 +25,8 @@ class RPS
 
     while current_round < rounds
       current_round += 1
-      current_player_weapon = Weapon.from_move(get_player_move)
-      current_server_weapon = Weapon.from_move(get_server_move)
+      current_player_weapon = Weapon.from_move(player_move)
+      current_server_weapon = Weapon.from_move(server_move)
       puts "Server: #{current_server_weapon.name}"
       puts "Player: #{current_player_weapon.name}"
 
@@ -39,7 +39,7 @@ class RPS
 
   private
 
-  def get_player_move
+  def player_move
     valid = false
     move = nil
 
@@ -52,7 +52,7 @@ class RPS
     MOVE_MAP[move.to_i]
   end
 
-  def get_server_move
+  def server_move
     client.next_weapon
   end
 
